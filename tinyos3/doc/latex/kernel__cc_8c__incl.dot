@@ -1,0 +1,44 @@
+digraph "kernel_cc.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="kernel_cc.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="assert.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="kernel_sched.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kernel__sched_8h.html",tooltip="TinyOS kernel: The Scheduler API. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="util.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$util_8h.html",tooltip="Tinyos utility code. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="stdio.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="string.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="errno.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="setjmp.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="bios.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bios_8h.html",tooltip="The Virtual Machine API. "];
+  Node11 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="ucontext.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="tinyos.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tinyos_8h.html",tooltip="Public kernel API. "];
+  Node13 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="kernel_proc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kernel__proc_8h.html",tooltip="The process table and process management. "];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="kernel_cc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kernel__cc_8h.html",tooltip="Concurrency and preemption control API. "];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="kernel_sys.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kernel__sys_8h_source.html"];
+  Node16 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+}
